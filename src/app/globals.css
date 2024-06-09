@@ -18,10 +18,138 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom */
+
+.bg-primary {
+  background-color: #11232b;
+}
+
+.bg-secondary {
+  background-color: #21353d;
+}
+
+.bg-primary-hover:hover {
+  background-color: #21353d;
+}
+
+.secondary-bg-button {
+  background-color: #099e65;
+}
+
+.secondary-bg-button:hover {
+  background-color: #099e65;
+}
+
+.primary-button-success {
+  background-color: #057c4f;
+}
+
+.primary-button-success:hover {
+  background-color: #099e65;
+}
+
+.border-primary {
+  border: solid 3px #21353d;
+}
+.border-secondary {
+  border: solid 3px #c0a366;
+}
+.border-secondary-light{
+  border: solid 1px #c0a366;
+}
+
+.text-primary {
+  color: #ffffff;
+}
+
+.text-title-active-static,
+.text-title-active,
+.text-title:hover,
+.text-title:focus,
+.text-title:active {
+  color: #af955e;
+}
+.text-title-active:hover {
+  color: #d8b974;
+}
+
+.text-show-link,
+.text-edit-link,
+.text-delete-link  {
+  color: #ffffff;
+}
+
+.text-show-link-active,
+.text-show-link:hover {
+  color: #099e65;
+}
+
+.text-edit-link-active,
+.text-edit-link:hover {
+  color: #5f8331;
+}
+
+.text-delete-link-active,
+.text-delete-link:hover {
+  color: #e41515;
+}
+
+.button-delete-bg {
+  background-color: #e41515;
+  color: #ffffff;
+}
+
+.button-delete-bg:hover {
+  background-color: #e72727;
+  color: #ffffff;
+}
+
+.button-primary-bg {
+  background-color: #af955e;
+  color: #ffffff;
+}
+
+.button-primary-bg:hover {
+  background-color: #c0a366;
+  color: #ffffff;
+}
+
+.text-danger {
+  color: #ef4444;
+}
+
+.spinner-border {
+  border-color: #D69E2E;
+}
+
+/* Scrollbar styles */
+
+html {
+  scrollbar-width: thin; 
+  scrollbar-color: #ffffff73 #21353db2;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #11232b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #11232b;
+  border-radius: 6px;
+  border: 7px solid #11232b;
 }
