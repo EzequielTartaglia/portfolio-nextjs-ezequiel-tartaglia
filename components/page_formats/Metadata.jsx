@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
@@ -6,15 +6,10 @@ import Head from "next/head";
 
 const Metadata = () => {
   const pathname = usePathname();
-  const isPlatformRoute = pathname && pathname.includes('/platform');
 
   useEffect(() => {
-    if (isPlatformRoute) {
-      document.title = "Bohemian | Plataforma";
-    } else {
-      document.title = "Bohemian";
-    }
-  }, [isPlatformRoute]);
+    document.title = "Ezequiel M. Tartaglia | Portfolio";
+  }, []);
 
   return (
     <Head>

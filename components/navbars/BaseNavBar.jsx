@@ -1,38 +1,19 @@
 'use client'
 
 import { useState } from "react";
-import LoginForm from "../forms/login/LoginForm";
 import ConfirmModal from "../ConfirmModal";
 import Button from "../Button";
 import Logo from "../Logo";
 import SubMenu from "./Submenu";
 import { FiChevronDown } from "react-icons/fi";
 import { useAside } from "@/contexts/AsideContext";
-import { useUserInfoContext } from "@/contexts/UserInfoContext";
 
-export default function BaseNavBar({ mainMenu, toggleMenuItems, loginInfo }) {
-  const { user, userLogout } = useUserInfoContext();
+export default function BaseNavBar({ mainMenu, toggleMenuItems }) {
   const [activeSubMenu, setActiveSubMenu] = useState(null);
   const { isAsideOpen, toggleAside, closeAside } = useAside();
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState(null);
 
   const toggleSubMenu = (id) => {
     setActiveSubMenu((prevSubMenu) => (prevSubMenu === id ? null : id));
-  };
-
-  const openModal = (content) => {
-    setModalContent(content);
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
-  const handleLogout = () => {
-    userLogout();
-    setIsModalOpen(false);
   };
 
   return (
@@ -108,17 +89,6 @@ export default function BaseNavBar({ mainMenu, toggleMenuItems, loginInfo }) {
               </button>
             </div>
             <div className="p-4">
-              {user && (
-                <div className="flex justify-center items-center mb-4">
-                  <span className="text-center">
-                    ¡Bienvenido/a, <br />
-                    <span className="text-title-active-static">
-                      {user.first_name} {user.last_name}
-                    </span>
-                    !
-                  </span>
-                </div>
-              )}
               {toggleMenuItems.map((item) => (
                 <div key={item.id} className="relative">
                   <Button
@@ -138,49 +108,8 @@ export default function BaseNavBar({ mainMenu, toggleMenuItems, loginInfo }) {
               ))}
             </div>
           </div>
-          {loginInfo && !user && (
-            <div className="p-4">
-              <div className="flex justify-center items-center mb-4">
-                <button
-                  className="text-title-active border-secondary-light transition duration-300 hover:-translate-y-1 flex items-center shadow-none py-2 px-2"
-                  onClick={() =>
-                    openModal(<LoginForm onCloseModal={closeModal} />)
-                  }
-                >
-                  {loginInfo.text}
-                </button>
-              </div>
-            </div>
-          )}
-          {user && (
-            <div className="p-4">
-              <div className="flex justify-center items-center mb-4">
-                <Button
-                  customClasses="text-title-active border-secondary-light shadow-none py-1 px-3"
-                  customFunction={() =>
-                    openModal(
-                      <ConfirmModal
-                        isOpen={true}
-                        onClose={closeModal}
-                        onConfirm={handleLogout}
-                        message={"¿Estás seguro que deseas cerrar sesión?"}
-                      />
-                    )
-                  }
-                  text={"Salir"}
-                />
-              </div>
-            </div>
-          )}
         </div>
       </aside>
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-primary p-6 rounded-lg shadow-lg text-center">
-            {modalContent}
-          </div>
-        </div>
-      )}
     </div>
   );
 }

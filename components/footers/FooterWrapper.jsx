@@ -6,27 +6,18 @@ import BaseFooter from './BaseFooter';
 
 export default function FooterWrapper() {
   const pathname = usePathname();
-  const isPlatformRoute = pathname && pathname.includes('/platform');
 
-  return isPlatformRoute ? <FooterPlataform /> : <Footer />;
+
+  return <Footer />;
 }
 
 export function Footer() {
   const items = [
-    { route: '/about', text: 'Sobre Bohemian' },
-    { route: '/terms', text: 'Terminos y condiciones' },
-    { route: '/contact', text: 'Contacto' },
+    { route: '/', text: 'Inicio' },
+    { route: '/professional_experiences', text: 'Experiencias profesionales' },
+    { route: '/projects', text: 'Proyectos' },
+    { route: '/certifications', text: 'Certificaciones' },
 
-  ];
-
-  return <BaseFooter items={items} />;
-}
-
-export function FooterPlataform() {
-  const items = [
-    { route: '/about', text: 'Sobre Bohemian' },
-    { route: '/contact', text: 'Contacto' },
-    { route: '/terms', text: 'Terminos y condiciones' },
   ];
 
   return <BaseFooter items={items} />;

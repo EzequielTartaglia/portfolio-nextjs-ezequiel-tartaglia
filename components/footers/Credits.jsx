@@ -20,7 +20,7 @@ export default function Credits() {
 
   return (
       <div className="bg-zinc-900 text-white p-1 text-center">
-        Bohemian CO Art&#174; | Desarrollado por {" "}
+        Ezequiel M. Tartaglia Portfolio &#174; | Desarrollado por {" "}
         <Link
           href={developerInfo.linkedin}
           className="text-title-active inline-flex items-center justify-center"
