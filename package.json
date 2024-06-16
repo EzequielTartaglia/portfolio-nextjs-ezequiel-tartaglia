@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "github:add": "git add .",
-    "github:commit": "git commit -m 'Double-commit'",
-    "github:push": "git push origin main && git push bohemian main && git push daslab main",
+    "github:commit": "git commit -m 'Default-commit'",
+    "github:push": "git push",
     "github:changes-up": "npm run github:add && npm run github:commit && npm run github:push"
   },
   "dependencies": {
