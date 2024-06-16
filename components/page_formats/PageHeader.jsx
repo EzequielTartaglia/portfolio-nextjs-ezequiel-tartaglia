@@ -1,3 +1,5 @@
+'use client'
+
 import { FiArrowLeft } from "react-icons/fi";
 import GoBackButton from "@/components/GoBackButton";
 import Title from "@/components/Title";

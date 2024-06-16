@@ -1,9 +1,5 @@
-import Title from '@/components/Title'
+import PageHeader from "@/components/page_formats/PageHeader";
 
 export default function HomePage() {
-  return (
-    <div className="flex flex-col w-full">
-      <Title text="Home page" />
-    </div>
-  )
+  return <PageHeader title="Inicio" />;
 }

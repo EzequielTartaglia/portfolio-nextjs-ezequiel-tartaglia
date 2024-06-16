@@ -1,7 +1,11 @@
-import React from 'react'
+import PageHeader from "@/components/page_formats/PageHeader";
 
 export default function ProfessionalExperiencesPage() {
   return (
-    <div>Experiencias profesionales</div>
-  )
+    <PageHeader
+      title="Experiencias profesionales"
+      goBackRoute={"/"}
+      goBackText={"Volver al inicio"}
+    />
+  );
 }
