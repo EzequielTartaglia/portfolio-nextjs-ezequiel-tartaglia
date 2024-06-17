@@ -119,7 +119,6 @@ export default function HomePage() {
               text="Plataforma educativa sobre terrarios."
               buttonText="Link al proyecto real"
               buttonRoute="https://bohemian-co-art.netlify.app/"
-              isOpenedInNewTab={true}
             />
 
             <ProjectCard
@@ -127,7 +126,6 @@ export default function HomePage() {
               text="Sistema CRM para gestión de construcción de edificios, proyectos, control de asistencia, liquidación de sueldos, entre otras funcionalidades."
               buttonText="Link al proyecto real"
               buttonRoute="http://felanix.unagi.com.ar/a/users/sign_in"
-              isOpenedInNewTab={true}
             />
 
             <ProjectCard
@@ -135,7 +133,6 @@ export default function HomePage() {
               text="Sistema CRM para gestion de operaciones y mantenimiento edilicio."
               buttonText="Link al proyecto real"
               buttonRoute="https://app.emsetec.com.ar/v2/users/login"
-              isOpenedInNewTab={true}
             />
 
             <ProjectCard
@@ -143,7 +140,6 @@ export default function HomePage() {
               text="Plataforma de Web3 para videojuegos, conectada con Blockchain."
               buttonText="Link al proyecto real"
               buttonRoute="https://www.poq.gg/"
-              isOpenedInNewTab={true}
             />
           </div>
           <br />
