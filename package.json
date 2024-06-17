@@ -13,6 +13,9 @@
     "github:changes-up": "npm run github:add && npm run github:commit && npm run github:push"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@supabase/ssr": "^0.3.0",
     "axios": "^1.7.2",
     "dotenv": "^16.4.5",
