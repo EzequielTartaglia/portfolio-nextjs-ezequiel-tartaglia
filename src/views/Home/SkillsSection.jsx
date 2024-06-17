@@ -146,8 +146,9 @@ export default function SkillsSection() {
           </div>
           <ul className="list-disc list-inside text-white">
           <li>Git</li>
-          <li>Github, Gitlab & Gitbucket</li>
+          <li>Collaboratives envoirements: Github, Gitlab & Gitbucket</li>
           <li>Agile Methodologies: Scrum, Kanban, EOL, Pulse</li>
+          <li>Deployment: Vercel, Netlify, GithubPages</li>
           <li>Project Managment</li>
           </ul>
         </div>
