@@ -3,6 +3,8 @@ import PageBody from "@/components/page_formats/PageBody";
 import PageHeader from "@/components/page_formats/PageHeader";
 import Image from "next/image";
 import SkillsSection from "./SkillsSection";
+import Link from "next/link";
+import ProjectCard from "./ProjectCart";
 
 export default function HomePage() {
   return (
@@ -106,25 +108,49 @@ export default function HomePage() {
         </div>
 
         <SkillsSection />
-        
-        <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8">
-          <h2 className="text-3xl text-teal-500 mb-6">Projects</h2>
+
+        <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8 w-full">
+          <h2 className="text-3xl text-teal-500 mb-6">
+            Proyectos para empresas
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-800 p-6 rounded-lg">
-              <h3 className="text-xl text-teal-400 mb-4">CyberPortal</h3>
-              <p className="text-white">
-                A futuristic portal for managing decentralized applications and
-                services.
-              </p>
-            </div>
-            <div className="bg-gray-800 p-6 rounded-lg">
-              <h3 className="text-xl text-teal-400 mb-4">AI Assistant</h3>
-              <p className="text-white">
-                An AI-powered assistant that helps with daily tasks and
-                integrates seamlessly with your workflow.
-              </p>
-            </div>
+            <ProjectCard
+              title="Bohemian (Landing Page & Plataforma educativa)"
+              text="Plataforma educativa sobre terrarios."
+              buttonText="Link al proyecto real"
+              buttonRoute="https://bohemian-co-art.netlify.app/"
+              isOpenedInNewTab={true}
+            />
+
+            <ProjectCard
+              title="Felanix - Unagi (CRM)"
+              text="Sistema CRM para gestión de construcción de edificios, proyectos, control de asistencia, liquidación de sueldos, entre otras funcionalidades."
+              buttonText="Link al proyecto real"
+              buttonRoute="http://felanix.unagi.com.ar/a/users/sign_in"
+              isOpenedInNewTab={true}
+            />
+
+            <ProjectCard
+              title="Emsetec - Zeus (CRM)"
+              text="Sistema CRM para gestion de operaciones y mantenimiento edilicio."
+              buttonText="Link al proyecto real"
+              buttonRoute="https://app.emsetec.com.ar/v2/users/login"
+              isOpenedInNewTab={true}
+            />
+
+            <ProjectCard
+              title="PocketFull Of Quarters (Landing Page & Plataforma gaming + Web3)"
+              text="Plataforma de Web3 para videojuegos, conectada con Blockchain."
+              buttonText="Link al proyecto real"
+              buttonRoute="https://www.poq.gg/"
+              isOpenedInNewTab={true}
+            />
           </div>
+          <br />
+          <CallToActionButton
+            text="Conoce mas sobre mis proyectos"
+            route={"/projects"}
+          />
         </div>
       </PageBody>
     </>

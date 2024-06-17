@@ -10,12 +10,13 @@ import {
   faPooStorm,
   faCodeCommit,
   faSatellite,
+  faBug,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function SkillsSection() {
   return (
     <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8">
-      <h2 className="text-3xl text-teal-500 mb-6">Skills</h2>
+      <h2 className="text-3xl text-teal-500 mb-6">Habilidades</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Frontend Skills */}
@@ -91,6 +92,21 @@ export default function SkillsSection() {
           </ul>
         </div>
 
+        {/* Testing Skills */}
+        <div className="bg-gray-800 p-6 rounded-lg">
+          <div className="flex items-center mb-4">
+            <FontAwesomeIcon
+              icon={faBug}
+              className="w-8 h-8 mr-2 text-teal-400"
+            />
+            <h3 className="text-xl text-teal-400">Testing</h3>
+          </div>
+          <ul className="list-disc list-inside text-white">
+            <li>QA-Manual</li>
+            <li>Playwright</li>
+          </ul>
+        </div>
+
         {/* ORM Skills */}
         <div className="bg-gray-800 p-6 rounded-lg">
           <div className="flex items-center mb-4">
@@ -103,7 +119,7 @@ export default function SkillsSection() {
             </h3>
           </div>
           <ul className="list-disc list-inside text-white">
-            <li>CakePhp</li>
+            <li>Cake Php</li>
             <li>Ruby on Rails</li>
           </ul>
         </div>
@@ -145,9 +161,11 @@ export default function SkillsSection() {
             <h3 className="text-xl text-teal-400">Other Skills</h3>
           </div>
           <ul className="list-disc list-inside text-white">
+          <li>Operative Systems: Windows(CMD) & Linux(Bash)</li>
           <li>Git</li>
           <li>Collaboratives envoirements: Github, Gitlab & Gitbucket</li>
           <li>Agile Methodologies: Scrum, Kanban, EOL, Pulse</li>
+          <li>Deployment: Vercel, Netlify, GithubPages</li>
           <li>Deployment: Vercel, Netlify, GithubPages</li>
           <li>Project Managment</li>
           </ul>
