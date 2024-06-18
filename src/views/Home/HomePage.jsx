@@ -14,7 +14,7 @@ export default function HomePage() {
         <div className="relative w-full bg-gradient-to-r from-black to-gray-800 text-white p-16 flex flex-col md:flex-row items-start justify-between">
           <div className="relative w-full md:w-1/2 h-[400px] md:h-[550px] z-0">
             <Image
-              src="https://ibb.co/d02pd3Z"
+              src="https://i.ibb.co/DDCMx6d/profile.png"
               alt="Ezequiel M. Tartaglia"
               className="object-cover opacity-75"
               layout="fill"
