@@ -16,7 +16,7 @@ export default function BaseFooter({ items }) {
           <div className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-4 max-w-[1140px] mx-auto py-[25px] px-5 gap-6">
             <div className="lg:col-span-1">
               <div className="logo-container" style={{ textAlign: "-webkit-center" }}>
-                <Logo isFooter={true} />
+                {/* Space to logo */}
                 <div className="border-b border-[#af955e] mt-4 w-[300px]"></div>
               </div>
               <div className="flex justify-center mt-2">
