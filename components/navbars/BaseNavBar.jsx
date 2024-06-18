@@ -20,7 +20,7 @@ export default function BaseNavBar({ mainMenu, toggleMenuItems }) {
     <div className="header">
       <nav className="bg-primary p-2 flex items-center justify-between">
         <div className="p-2 ml-3">
-          <Logo />
+          {/* Space to logo */}
         </div>
         <div className="flex items-center space-x-4">
           {mainMenu.map((item) => (
@@ -67,7 +67,7 @@ export default function BaseNavBar({ mainMenu, toggleMenuItems }) {
         <div className="relative h-full flex flex-col justify-between">
           <div>
             <div className="flex justify-center items-center p-4">
-              <Logo />
+               {/* Space to logo */}
               <button
                 className="text-primary focus:outline-none text-title px-3 py-2 absolute right-0 top-0"
                 onClick={closeAside}
