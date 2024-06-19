@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function CallToActionButton({ route, text, openInNewTab }) {
   const linkProps = {
@@ -12,7 +13,7 @@ export default function CallToActionButton({ route, text, openInNewTab }) {
   }
 
   return (
-    <a {...linkProps}>
+    <Link {...linkProps}>
       <div className="flex items-center">
         <span className="relative inline-flex overflow-hidden rounded-full p-[1px]">
           <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"></span>
@@ -21,6 +22,6 @@ export default function CallToActionButton({ route, text, openInNewTab }) {
           </div>
         </span>
       </div>
-    </a>
+    </Link>
   );
 }
