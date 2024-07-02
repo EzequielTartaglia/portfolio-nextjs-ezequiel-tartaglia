@@ -13,7 +13,7 @@ import Image from "next/image";
 
 const experiences = [
   {
-    role: "Chief Technology Officer / Tech Leader",
+    role: "Chief Technology Officer || Tech Leader",
     company: "Felanix Construcciones",
     location: "La Plata, Provincia de Buenos Aires, Argentina",
     dates: "Agosto de 2023 - actualidad",
