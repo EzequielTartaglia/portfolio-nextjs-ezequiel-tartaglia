@@ -125,7 +125,7 @@ export default function ProfessionalExperiencesPage() {
       />
       <PageBody>
         <div className="relative overflow-hidden py-10">
-          <div className="absolute inset-y-0 left-1/2 w-1 bg-blue-500"></div>
+          <div className="absolute inset-y-0 left-1/2 w-1 button-primary-bg"></div>
           {experiences.map((experience, index) => (
             <div
               key={index}
@@ -134,7 +134,7 @@ export default function ProfessionalExperiencesPage() {
               }`}
             >
               <div className="w-1/2 p-4">
-                <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-blue-500 relative">
+                <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-secondary-light relative">
                   <div className="flex items-center mb-4">
                     <Image
                       src={experience.logo}

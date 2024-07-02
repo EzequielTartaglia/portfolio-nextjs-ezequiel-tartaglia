@@ -63,10 +63,10 @@ body {
   border: solid 3px #21353d;
 }
 .border-secondary {
-  border: solid 3px #c0a366;
+  border: solid 3px #14B8A6;
 }
 .border-secondary-light{
-  border: solid 1px #c0a366;
+  border: solid 1px #14B8A6;
 }
 
 .text-primary {
@@ -78,10 +78,10 @@ body {
 .text-title:hover,
 .text-title:focus,
 .text-title:active {
-  color: #af955e;
+  color: #14B8A6;
 }
 .text-title-active:hover {
-  color: #d8b974;
+  color: #5adece;
 }
 
 .text-show-link,
@@ -116,7 +116,7 @@ body {
 }
 
 .button-primary-bg {
-  background-color: #af955e;
+  background-color: #5adece;
   color: #ffffff;
 }
 
@@ -130,7 +130,7 @@ body {
 }
 
 .spinner-border {
-  border-color: #D69E2E;
+  border-color: #5adece;
 }
 
 /* Scrollbar styles */
