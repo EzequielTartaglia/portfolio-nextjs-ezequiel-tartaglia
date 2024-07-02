@@ -3,8 +3,9 @@ import PageBody from "@/components/page_formats/PageBody";
 import PageHeader from "@/components/page_formats/PageHeader";
 import Image from "next/image";
 import SkillsSection from "./SkillsSection";
-import Link from "next/link";
 import ProjectCard from "./ProjectCart";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faProjectDiagram } from "@fortawesome/free-solid-svg-icons";
 
 export default function HomePage() {
   return (
@@ -110,8 +111,14 @@ export default function HomePage() {
         <SkillsSection />
 
         <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8 w-full">
-          <h2 className="text-3xl text-teal-500 mb-6">
-            Proyectos para empresas
+          
+          <h2 className="text-3xl text-teal-500 mb-6 flex">
+        <FontAwesomeIcon
+          icon={faProjectDiagram}
+          className="w-8 h-8 mr-2 text-teal-400"
+        />
+
+      Proyectos para empresas
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ProjectCard

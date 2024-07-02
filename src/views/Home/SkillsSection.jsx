@@ -18,7 +18,7 @@ export default function SkillsSection() {
         <FontAwesomeIcon
           icon={faCode}
           className="w-8 h-8 mr-2 text-teal-400"
-        />{" "}
+        />
         Habilidades
       </h2>
 
