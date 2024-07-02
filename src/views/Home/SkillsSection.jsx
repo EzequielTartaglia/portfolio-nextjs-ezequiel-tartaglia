@@ -7,8 +7,6 @@ import {
   faBrain,
   faCubes,
   faCodeBranch,
-  faPooStorm,
-  faCodeCommit,
   faSatellite,
   faBug,
 } from "@fortawesome/free-solid-svg-icons";
@@ -16,7 +14,13 @@ import {
 export default function SkillsSection() {
   return (
     <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8">
-      <h2 className="text-3xl text-teal-500 mb-6">Habilidades</h2>
+      <h2 className="text-3xl text-teal-500 mb-6 flex">
+        <FontAwesomeIcon
+          icon={faCode}
+          className="w-8 h-8 mr-2 text-teal-400"
+        />{" "}
+        Habilidades
+      </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Frontend Skills */}
@@ -161,12 +165,12 @@ export default function SkillsSection() {
             <h3 className="text-xl text-teal-400">Other Skills</h3>
           </div>
           <ul className="list-disc list-inside text-white">
-          <li>Operative Systems: Windows(CMD) & Linux(Bash)</li>
-          <li>Git</li>
-          <li>Collaboratives envoirements: Github, Gitlab & Gitbucket</li>
-          <li>Agile Methodologies: Scrum, Kanban, EOL, Pulse</li>
-          <li>Deployment: Vercel, Netlify, GithubPages</li>
-          <li>Project Managment</li>
+            <li>Operative Systems: Windows(CMD) & Linux(Bash)</li>
+            <li>Git</li>
+            <li>Collaboratives envoirements: Github, Gitlab & Gitbucket</li>
+            <li>Agile Methodologies: Scrum, Kanban, EOL, Pulse</li>
+            <li>Deployment: Vercel, Netlify, GithubPages</li>
+            <li>Project Managment</li>
           </ul>
         </div>
       </div>
