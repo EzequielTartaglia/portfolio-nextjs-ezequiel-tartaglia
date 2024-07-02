@@ -62,7 +62,7 @@ export default function BaseNavBar({ mainMenu, toggleMenuItems }) {
       <aside
         className={`fixed top-0 left-0 h-full bg-gray-800 bg-opacity-90 z-20 transition-transform transform ${
           isAsideOpen ? "translate-x-0" : "-translate-x-full"
-        } w-3/5 lg:w-1/6`}
+        } w-3/5 lg:w-2/6`}
       >
         <div className="relative h-full flex flex-col justify-between">
           <div>
