@@ -1,6 +1,15 @@
 import PageBody from "@/components/page_formats/PageBody";
 import PageHeader from "@/components/page_formats/PageHeader";
 
+// Importa las imágenes de los logos de cada empresa
+import felanixLogo from "../../../public/assets/companies/felanix_construcciones_logo.jpg";
+import emsetecLogo from "../../../public/assets/companies/emsetec_logo.jpg";
+import pocketfulLogo from "../../../public/assets/companies/pocketfull_of_quarters_logo.jpg";
+import coderhouseLogo from "../../../public/assets/companies/coderhouse_logo.jpg";
+import makingPublicidadeLogo from "../../../public/assets/companies/making_publicidade_logo.jpg";
+import alianzaAmericaLogo from "../../../public/assets/companies/alianza_america_idiomas_logo.jpg";
+import proyectoSUDLogo from "../../../public/assets/companies/proyecto_sud_logo.jpg";
+import Image from "next/image";
 
 const experiences = [
   {
@@ -14,6 +23,7 @@ const experiences = [
       "Desarrollé soluciones a lo largo del ciclo de vida del software, desde análisis de requerimientos hasta implementación para usuarios finales.",
       "Experiencia en programación full-stack utilizando tecnologías como Ruby on Rails, PostgreSQL, DBeaver, JavaScript, y pruebas unitarias.",
     ],
+    logo: felanixLogo,
   },
   {
     role: "Fullstack Software Engineer & Data Scientist",
@@ -27,6 +37,7 @@ const experiences = [
       "Metodologías ágiles: Kanban, utilización de ticketera Trello.",
       "Gestión de la ticketera y resolución de incidencias de infraestructura (Soporte IT/Help Desk) tanto de manera presencial como mediante acceso remoto (AnyDesk) en áreas de software, cloud, redes y Outlook.",
     ],
+    logo: emsetecLogo,
   },
   {
     role: "Fullstack Software Engineer",
@@ -42,30 +53,14 @@ const experiences = [
       "Compromiso con la comunicación abierta y transparente para asegurar la entrega oportuna de proyectos y lograr resultados exitosos.",
       "Experiencia en cumplir con plazos ajustados, objetivos y entregas a tiempo, así como en la limpieza de código y refactorización para optimizar rendimiento y escalabilidad del software.",
     ],
-    skills: [
-      "Bases de datos",
-      "Pruebas de software",
-      "Repositorio",
-      "Optimización de procesos",
-      "Bilingüe (Español-Inglés)",
-      "JavaScript",
-      "Hojas de estilos en cascada (CSS)",
-      "Next.js",
-      "Metodologías de desarrollo de software",
-      "TypeScript",
-      "Inteligencia artificial",
-      "React.js",
-      "HTML5",
-      "Tailwind",
-      "Git",
-    ],
+    logo: pocketfulLogo,
   },
   {
-    "role": "Speaker || Contenidista & Evaluador e-learning || Profesor & Tutor Adjunto en Programación/Data",
-    "company": "Coderhouse",
-    "location": "Remoto · Híbrido",
-    "dates": "Junio de 2022 - actualidad",
-    "responsibilities": [
+    role: "Speaker || Contenidista & Evaluador e-learning || Profesor & Tutor Adjunto en Programación/Data",
+    company: "Coderhouse",
+    location: "Remoto · Híbrido",
+    dates: "Junio de 2022 - actualidad",
+    responsibilities: [
       "Participación en comisión de inteligencia artificial para empleados de la Universidad Autónoma de Chile.",
       "Liderazgo en la comisión inaugural de Prompt Engineering: Generación de Propts.",
       "Tutoría y enseñanza en programación, data e inteligencia artificial (Data Science, Data Engineering, Python, SQL, Fundamentos de IA, Prompt Engineer: Generación de prompts, Prompt Engineer para programadores, Javascript, ReactJs, NextJs).",
@@ -73,17 +68,8 @@ const experiences = [
       "Desarrollo de contenidos institucionales para productos como NextJS e Inteligencia Artificial: Generación de Prompts y Finanzas personales para la Escuela de Negocios.",
       "Preparación de exámenes técnicos para la contratación de talentos académicos."
     ],
-    "skills": [
-      "Inteligencia Artificial",
-      "Programación",
-      "Data Science",
-      "NextJS",
-      "JavaScript",
-      "ReactJS",
-      "Evaluación e-learning"
-    ]
-  }
-,  
+    logo: coderhouseLogo,
+  },
   {
     role: "Especialista en Administración de Datos y Desarrollo de Software para Campañas Publicitarias",
     company: "Making Publicidade",
@@ -96,17 +82,7 @@ const experiences = [
       "Optimización y mantenimiento de código en procesos de control de datos y programación con Python para asegurar la eficacia y estabilidad en campañas publicitarias.",
       "Ingreso, análisis y auditoría de datos de facturación diaria y mensual de campañas publicitarias, implementando soluciones automatizadas y software para mejorar eficiencia y precisión.",
     ],
-    skills: [
-      "Bases de datos",
-      "Python",
-      "Pruebas de software",
-      "Repositorio",
-      "Optimización de procesos",
-      "Bilingüe (Español-Inglés)",
-      "Introducción de datos",
-      "Portugués brasileño",
-      "Análisis de datos",
-    ],
+    logo: makingPublicidadeLogo,
   },
   {
     role: "Analista y Auditor informático de bases de datos (Data Analytics and Auditor IT)",
@@ -121,14 +97,7 @@ const experiences = [
       "Análisis y auditoría de datos para mejorar la eficiencia operativa.",
       "Implementación de prácticas para reducir errores y pérdidas monetarias.",
     ],
-    skills: [
-      "Bases de datos",
-      "Auditoría informática",
-      "Análisis de datos",
-      "Supervisión administrativa",
-      "Análisis de datos",
-      "Optimización de procesos",
-    ],
+    logo: alianzaAmericaLogo,
   },
   {
     role: "Desarrollador de proyecto Front-End (Sitio Web)",
@@ -142,7 +111,7 @@ const experiences = [
       "Diseño gráfico de imágenes y videos, y agregado de funcionalidad de descarga de archivos.",
       "Resolución del 90% de problemas de características que no funcionaban, utilizando soluciones creativas.",
     ],
-    skills: ["Atención al detalle", "Atención al cliente"],
+    logo: proyectoSUDLogo,
   },
 ];
 
@@ -166,10 +135,17 @@ export default function ProfessionalExperiencesPage() {
             >
               <div className="w-1/2 p-4">
                 <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-blue-500 relative">
-                  <h3 className="text-xl font-bold text-white">
-                    {experience.role}
-                  </h3>
-                  <p className="text-sm text-gray-400">{experience.time}</p>
+                  <div className="flex items-center mb-4">
+                    <Image
+                      src={experience.logo}
+                      alt={`${experience.company} Logo`}
+                      className="h-12 w-12 mr-3"
+                    />
+                    <h3 className="text-xl font-bold text-white">
+                      {experience.role}
+                    </h3>
+                  </div>
+                  <p className="text-sm text-gray-400">{experience.dates}</p>
                   <p className="text-sm text-gray-400">{experience.location}</p>
                   <ul className="mt-2 text-gray-300">
                     {experience.responsibilities.map((item, i) => (
