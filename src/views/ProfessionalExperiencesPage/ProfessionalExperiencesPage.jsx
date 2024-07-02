@@ -56,6 +56,20 @@ const experiences = [
     logo: pocketfulLogo,
   },
   {
+    role: "Especialista en Administración de Datos y Desarrollo de Software para Campañas Publicitarias",
+    company: "Making Publicidade",
+    location: "Brasil (remoto)",
+    dates: "Octubre de 2022 - Abril de 2023",
+    responsibilities: [
+      "Administración de bases de datos de campañas publicitarias para empresas internacionales como Nubank, Santander, Itau, Paschoalotto, Natura, Avon, Panfixa, entre otros.",
+      "Programación con Python para la ejecución de envíos de campañas publicitarias, recepción y visualización de datos mediante MS Excel.",
+      "Uso experto de múltiples servidores remotos y Dropbox para la eficiencia en la gestión de datos.",
+      "Optimización y mantenimiento de código en procesos de control de datos y programación con Python para asegurar la eficacia y estabilidad en campañas publicitarias.",
+      "Ingreso, análisis y auditoría de datos de facturación diaria y mensual de campañas publicitarias, implementando soluciones automatizadas y software para mejorar eficiencia y precisión.",
+    ],
+    logo: makingPublicidadeLogo,
+  },
+  {
     role: "Speaker || Contenidista & Evaluador e-learning || Profesor & Tutor Adjunto en Programación/Data",
     company: "Coderhouse",
     location: "Remoto · Híbrido",
@@ -69,20 +83,6 @@ const experiences = [
       "Preparación de exámenes técnicos para la contratación de talentos académicos."
     ],
     logo: coderhouseLogo,
-  },
-  {
-    role: "Especialista en Administración de Datos y Desarrollo de Software para Campañas Publicitarias",
-    company: "Making Publicidade",
-    location: "Brasil (remoto)",
-    dates: "octubre de 2022 - abril de 2023",
-    responsibilities: [
-      "Administración de bases de datos de campañas publicitarias para empresas internacionales como Nubank, Santander, Itau, Paschoalotto, Natura, Avon, Panfixa, entre otros.",
-      "Programación con Python para la ejecución de envíos de campañas publicitarias, recepción y visualización de datos mediante MS Excel.",
-      "Uso experto de múltiples servidores remotos y Dropbox para la eficiencia en la gestión de datos.",
-      "Optimización y mantenimiento de código en procesos de control de datos y programación con Python para asegurar la eficacia y estabilidad en campañas publicitarias.",
-      "Ingreso, análisis y auditoría de datos de facturación diaria y mensual de campañas publicitarias, implementando soluciones automatizadas y software para mejorar eficiencia y precisión.",
-    ],
-    logo: makingPublicidadeLogo,
   },
   {
     role: "Analista y Auditor informático de bases de datos (Data Analytics and Auditor IT)",
@@ -103,7 +103,7 @@ const experiences = [
     role: "Desarrollador de proyecto Front-End (Sitio Web)",
     company: "Proyecto SUD",
     location: "Provincia de Buenos Aires, Argentina",
-    dates: "enero de 2022 - marzo de 2022",
+    dates: "Enero de 2022 - Marzo de 2022",
     responsibilities: [
       "Diseño de un sitio web 100% responsive aplicando los mejores principios de diseño.",
       "Desarrollo de las cinco secciones utilizando lenguajes de Frontend.",
