@@ -133,7 +133,7 @@ export default function ProfessionalExperiencesPage() {
                 index % 2 === 0 ? "flex-row" : "flex-row-reverse"
               }`}
             >
-              <div className="w-1/2 p-4">
+              <div className="w-2/2 md:w-1/2 p-4">
                 <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-secondary-light relative">
                   <div className="flex items-center mb-4">
                     <Image
