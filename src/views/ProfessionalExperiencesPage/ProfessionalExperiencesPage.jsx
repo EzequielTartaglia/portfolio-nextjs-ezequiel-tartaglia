@@ -1,13 +1,13 @@
 import PageBody from "@/components/page_formats/PageBody";
 import PageHeader from "@/components/page_formats/PageHeader";
-import Image from "next/image";
+
 
 const experiences = [
   {
-    role: "Chief Technology Officer",
+    role: "Chief Technology Officer / Tech Leader",
     company: "Felanix Construcciones",
     location: "La Plata, Provincia de Buenos Aires, Argentina",
-    dates: "agosto de 2023 - actualidad",
+    dates: "Agosto de 2023 - actualidad",
     responsibilities: [
       "Dirigí los departamentos de Programación, Gestión de Datos e Infraestructura, supervisando a los respectivos jefes de área.",
       "Participé activamente en los procesos operativos y avances tecnológicos, incluyendo programación, generación de insights con ciencia de datos y análisis de datos, y soporte de infraestructura.",
@@ -17,9 +17,9 @@ const experiences = [
   },
   {
     role: "Fullstack Software Engineer & Data Scientist",
-    company: "EMSETEC (Autónomo)",
-    location: "Argentina (En remoto)",
-    dates: "junio de 2023 - noviembre de 2023",
+    company: "EMSETEC",
+    location: "Argentina",
+    dates: "Junio de 2023 - Noviembre de 2023",
     responsibilities: [
       "Despliegue de aplicaciones de sistemas de gestión edilicia y módulo Internet of Things (IoT) para entidades bancarias y de renombre como Galicia, Santander, Macro, AYSA, Edenor, la embajada de Israel, Allkem.",
       "Tecnologías utilizadas: Python, Bash (Linux), Git/Github, JavaScript, PHP (CakePHP), MySQL y Docker.",
@@ -32,7 +32,7 @@ const experiences = [
     role: "Fullstack Software Engineer",
     company: "Pocketful of Quarters",
     location: "Austin, Texas, Estados Unidos (En remoto)",
-    dates: "enero de 2023 - junio de 2023",
+    dates: "Enero de 2023 - Junio de 2023",
     responsibilities: [
       "Despliegue de aplicación plataforma de eSports para desarrolladores de videojuegos y usuarios en web3 con criptomonedas / fintech.",
       "Tecnologías utilizadas: NextJS (ReactJs), TypeScript, NodeJs, Tailwind, Git/Github, GraphQL, Playwright, Prisma y Docker.",
@@ -61,6 +61,30 @@ const experiences = [
     ],
   },
   {
+    "role": "Speaker || Contenidista & Evaluador e-learning || Profesor & Tutor Adjunto en Programación/Data",
+    "company": "Coderhouse",
+    "location": "Remoto · Híbrido",
+    "dates": "Junio de 2022 - actualidad",
+    "responsibilities": [
+      "Participación en comisión de inteligencia artificial para empleados de la Universidad Autónoma de Chile.",
+      "Liderazgo en la comisión inaugural de Prompt Engineering: Generación de Propts.",
+      "Tutoría y enseñanza en programación, data e inteligencia artificial (Data Science, Data Engineering, Python, SQL, Fundamentos de IA, Prompt Engineer: Generación de prompts, Prompt Engineer para programadores, Javascript, ReactJs, NextJs).",
+      "Participación como Speaker en el lanzamiento de productos audiovisuales en el área de inteligencia artificial y programación a nivel internacional.",
+      "Desarrollo de contenidos institucionales para productos como NextJS e Inteligencia Artificial: Generación de Prompts y Finanzas personales para la Escuela de Negocios.",
+      "Preparación de exámenes técnicos para la contratación de talentos académicos."
+    ],
+    "skills": [
+      "Inteligencia Artificial",
+      "Programación",
+      "Data Science",
+      "NextJS",
+      "JavaScript",
+      "ReactJS",
+      "Evaluación e-learning"
+    ]
+  }
+,  
+  {
     role: "Especialista en Administración de Datos y Desarrollo de Software para Campañas Publicitarias",
     company: "Making Publicidade",
     location: "Brasil (remoto)",
@@ -86,9 +110,9 @@ const experiences = [
   },
   {
     role: "Analista y Auditor informático de bases de datos (Data Analytics and Auditor IT)",
-    company: "No especificada",
+    company: "Alianza America Idiomas",
     location: "Brasil y Argentina",
-    dates: "abril de 2022 - mayo de 2022 (2 meses)",
+    dates: "Agosto de 2021 - Diciembre de 2022",
     responsibilities: [
       "Supervisión y auditoría de bases de datos informáticas.",
       "Análisis de datos para asegurar el correcto funcionamiento de las bases de datos.",
