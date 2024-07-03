@@ -134,7 +134,7 @@ export default function ProfessionalExperiencesPage() {
               }`}
             >
               <div className="w-2/2 md:w-1/2 p-4">
-                <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-secondary-light relative">
+                <div className="bg-gray-900 p-6 rounded-lg shadow-lg border border-secondary-light relative">
                   <div className="flex items-center mb-4">
                     <Image
                       src={experience.logo}

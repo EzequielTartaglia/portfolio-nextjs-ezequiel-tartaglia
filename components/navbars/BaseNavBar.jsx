@@ -18,7 +18,7 @@ export default function BaseNavBar({ mainMenu, toggleMenuItems }) {
 
   return (
     <div className="header">
-      <nav className="bg-gray-800 p-2 flex items-center justify-between">
+      <nav className="bg-gray-900 p-2 flex items-center justify-between">
         <div className="p-2 ml-3">
           {/* Space to logo */}
         </div>
@@ -60,7 +60,7 @@ export default function BaseNavBar({ mainMenu, toggleMenuItems }) {
         />
       )}
       <aside
-        className={`fixed top-0 left-0 h-full bg-gray-800 bg-opacity-90 z-20 transition-transform transform ${
+        className={`fixed top-0 left-0 h-full bg-gray-900 bg-opacity-90 z-20 transition-transform transform ${
           isAsideOpen ? "translate-x-0" : "-translate-x-full"
         } w-3/5 lg:w-2/6`}
       >

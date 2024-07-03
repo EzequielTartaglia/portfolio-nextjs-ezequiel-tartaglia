@@ -12,7 +12,7 @@ import Credits from './Credits';
 export default function BaseFooter({ items }) {
     return (
       <>
-        <footer className="bg-gray-800 text-primary p-4 pt-0">
+        <footer className="bg-gray-900 text-primary p-4 pt-0">
           <div className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-4 max-w-[1140px] mx-auto py-[25px] px-5 gap-6">
             <div className="lg:col-span-1">
               <div className="logo-container" style={{ textAlign: "-webkit-center" }}>

@@ -14,7 +14,7 @@ export default function FooterWrapper() {
 export function Footer() {
   const items = [
     { route: '/', text: 'Inicio' },
-    { route: '/professional_experiences', text: 'Experiencias profesionales' },
+    { route: '/professional_experiences', text: 'Experiencias' },
     { route: '/projects', text: 'Proyectos' },
     { route: '/certifications', text: 'Certificaciones' },
 

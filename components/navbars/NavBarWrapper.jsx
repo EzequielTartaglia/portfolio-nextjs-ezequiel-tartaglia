@@ -17,7 +17,7 @@ export function NavBar() {
 
   const toggleMenuItems = [
     { id: 'home', route: '/', text: 'Inicio' },
-    { id: 'professional_experiences', route: '/professional_experiences', text: 'Experiencias profesionales' },
+    { id: 'professional_experiences', route: '/professional_experiences', text: 'Experiencias' },
     { id: 'projects', route: '/projects', text: 'Proyectos' },
     { id: 'certifications', route: '/certifications', text: 'Certificaciones' },
   ];

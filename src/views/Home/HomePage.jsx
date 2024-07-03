@@ -12,8 +12,8 @@ export default function HomePage() {
     <>
       <PageHeader title="Inicio" />
       <PageBody>
-        <div className="relative w-full bg-gradient-to-r from-black to-gray-800 text-white p-16 flex flex-col md:flex-row items-start justify-between">
-          <div className="relative w-full md:w-1/2 h-[400px] md:h-[550px] z-0">
+      <div className="relative w-full bg-gradient-to-r from-black to-gray-900 text-white p-8 sm:p-16 flex flex-col md:flex-row items-start justify-between border-secondary-light">
+          <div className="relative w-full h-[400px] sm:h-[550px] z-0 mb-8 md:mb-0">
             <Image
               src="https://i.ibb.co/DDCMx6d/profile.png"
               alt="Ezequiel M. Tartaglia"
@@ -22,25 +22,25 @@ export default function HomePage() {
               quality={100}
             />
           </div>
-          <div className="absolute top-[250px] right-0 text-left z-10 md:w-1/2">
-            <h1 className="text-5xl font-bold text-teal-400">
+          <div className="relative w-full md:w-1/2 text-left z-10">
+            <h1 className="text-4xl sm:text-5xl font-bold text-teal-400">
               Ezequiel M. Tartaglia{" "}
             </h1>
-            <p className="text-xl mt-2 text-gray-200">
+            <p className="text-lg sm:text-xl mt-2 text-gray-200">
               Associated of Applied Science in Applied Technology
             </p>
-            <p className="text-2xl mt-4 text-teal-200">
+            <p className="text-xl sm:text-2xl mt-4 text-teal-200">
               Sr. Ingeniero de Software y Científico de Datos
             </p>
+            <CallToActionButton
+              text="Disponible para trabajar"
+              route={"https://www.linkedin.com/in/ezequieltartaglia/"}
+              openInNewTab
+              className="mt-[700px] sm:mt-8"
+            />
           </div>
-
-          <CallToActionButton
-            text="Disponible para trabajar"
-            route={"https://www.linkedin.com/in/ezequieltartaglia/"}
-            openInNewTab
-          />
         </div>
-        <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8 max-w-[100%]">
+        <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8 max-w-[100%] border-secondary-light">
           <h2 className="text-3xl text-teal-500 mb-6 flex items-center">
             <svg
               className="w-8 h-8 mr-3"
@@ -110,7 +110,7 @@ export default function HomePage() {
 
         <SkillsSection />
 
-        <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8 max-w-[100%]">
+        <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8 max-w-[100%] border-secondary-light">
           
           <h2 className="text-3xl text-teal-500 mb-6 flex">
         <FontAwesomeIcon
@@ -120,7 +120,7 @@ export default function HomePage() {
 
       Proyectos para empresas
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
             <ProjectCard
               title="Bohemian (Landing Page & Plataforma educativa)"
               text="Plataforma educativa sobre terrarios."
