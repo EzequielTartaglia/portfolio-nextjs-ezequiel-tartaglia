@@ -13,7 +13,7 @@ import {
 
 export default function SkillsSection() {
   return (
-    <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8">
+    <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8 max-w-[100%]">
       <h2 className="text-3xl text-teal-500 mb-6 flex">
         <FontAwesomeIcon
           icon={faCode}

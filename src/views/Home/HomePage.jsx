@@ -40,7 +40,7 @@ export default function HomePage() {
             openInNewTab
           />
         </div>
-        <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8">
+        <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8 max-w-[100%]">
           <h2 className="text-3xl text-teal-500 mb-6 flex items-center">
             <svg
               className="w-8 h-8 mr-3"
@@ -103,14 +103,14 @@ export default function HomePage() {
             en mis roles actuales..
           </p>
           <CallToActionButton
-            text="Conoce mas sobre mis experiencias profesionales"
+            text="Conoce mas sobre mis experiencias"
             route={"/professional_experiences"}
           />
         </div>
 
         <SkillsSection />
 
-        <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8 w-full">
+        <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8 max-w-[100%]">
           
           <h2 className="text-3xl text-teal-500 mb-6 flex">
         <FontAwesomeIcon
