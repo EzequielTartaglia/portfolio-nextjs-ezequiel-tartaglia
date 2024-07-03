@@ -20,7 +20,7 @@ export default function BaseNavBar({ mainMenu, toggleMenuItems }) {
     <div className="header">
       <nav className="bg-gray-900 p-2 flex items-center justify-between">
         <div className="p-2 ml-3">
-          {/* Space to logo */}
+        <Logo/>
         </div>
         <div className="flex items-center space-x-4">
           {mainMenu.map((item) => (

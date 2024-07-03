@@ -1,14 +1,17 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import logoSvg from '@/public/logo.png';
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
-export default function Logo({ isFooter = false }) {
+export default function Logo({ isFooter = false, size = "2x" }) {
   return (
     <Link href="/">
-      {isFooter
-        ? <Image alt="Bohemian" title="Bohemian" loading="lazy" width="200" height="" decoding="async" src={logoSvg} />
-        : <Image alt="Bohemian" title="Bohemian" loading="lazy" width="70" height="" decoding="async" src={logoSvg} />
-      }
+      <div>
+        <FontAwesomeIcon
+          icon={faCode}
+          size={isFooter ? "4x" : "2x"}
+          className="text-title-active-static"
+        />
+      </div>
     </Link>
   );
 }
