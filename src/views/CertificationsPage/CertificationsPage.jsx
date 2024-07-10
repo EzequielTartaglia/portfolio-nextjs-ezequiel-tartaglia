@@ -12,20 +12,25 @@ import googleLogo from "../../../public/assets/education/google_logo.jpg";
 import gcbaLogo from "../../../public/assets/education/gcba_logo.jpg";
 import udemyLogo from "../../../public/assets/education/udemy_logo.jpg";
 import openBootcampLogo from "../../../public/assets/education/openbootcamp_logo.jpg";
+import masEducationLogo from "../../../public/assets/education/mas_education_logo.jpg"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faDriversLicense, faFileCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 const higherEdAndSpecializations = [
   {
-    title: "Licenciatura en Tecnología Aplicada con ingeniería a Desarrollo de Software",
+    title:
+      "Bachelor of Applied Science in Applied Technology",
     institution: "Brigham Young University - Idaho",
     dates: "Abr. 2022 - Sept. 2027",
-    description: "Aptitudes: C# · Repositorio · Pruebas de software",
+    description: "Licenciatura en Tecnología Aplicada con ingeniería en Desarrollo de Software",
     logo: byuIdahoLogo,
   },
   {
     title: "Associate of Applied Science in Applied Technology",
     institution: "Brigham Young University - Idaho",
-    dates: "",
-    description: "Tecnico Universitario en Tecnología Aplicada (Analista de sistemas)",
+    dates: "Sept. 2021 - May. 2024",
+    description:
+      "Tecnico Universitario en Tecnología Aplicada (Analista de sistemas)",
     logo: byuIdahoLogo,
   },
   {
@@ -34,14 +39,7 @@ const higherEdAndSpecializations = [
     dates: "Sept. 2021 - Jul. 2022",
     description: "Titulación: A (mayor a 92%)",
     logo: byuIdahoLogo,
-  },
-  {
-    title: "Microsoft Office Specialist",
-    institution: "Instituto MAS",
-    dates: "Feb. 2015",
-    description: "Administración de sistemas informáticos en red",
-    logo: coderhouseLogo,
-  },
+  }
 ];
 
 const courses = [
@@ -94,6 +92,13 @@ const courses = [
     description: "",
     logo: openBootcampLogo,
   },
+  {
+    title: "Microsoft Office Specialist",
+    institution: "Instituto MAS",
+    dates: "Feb. 2015",
+    description: "",
+    logo: masEducationLogo,
+  }
 ];
 
 const CertificateCard = ({ certificate }) => (
@@ -123,14 +128,28 @@ export default function CertificatesPage() {
         goBackText={"Volver al Inicio"}
       />
       <PageBody>
-        <div className="py-10">
-          <h2 className="text-2xl font-bold text-white mb-6">Nivel Superior y Especializaciones</h2>
+        <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8 max-w-[100%] border-secondary-light">
+          <h2 className="text-3xl text-teal-500 mb-6 flex">
+            <FontAwesomeIcon
+              icon={faDriversLicense}
+              className="w-8 h-8 mr-2 text-teal-400"
+            />
+            Educación superior y especializaciones
+          </h2>
           <div className="flex flex-wrap">
             {higherEdAndSpecializations.map((certificate, index) => (
               <CertificateCard key={index} certificate={certificate} />
             ))}
           </div>
-          <h2 className="text-2xl font-bold text-white mt-12 mb-6">Cursos</h2>
+        </div>
+        <div className="bg-gray-900 border-t-4 border-teal-500 p-10 mt-8 max-w-[100%] border-secondary-light">
+          <h2 className="text-3xl text-teal-500 mb-6 flex">
+            <FontAwesomeIcon
+              icon={faFileCircleCheck}
+              className="w-8 h-8 mr-2 text-teal-400"
+            />
+            Cursos
+          </h2>
           <div className="flex flex-wrap">
             {courses.map((certificate, index) => (
               <CertificateCard key={index} certificate={certificate} />
