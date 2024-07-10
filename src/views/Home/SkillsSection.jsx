@@ -10,6 +10,7 @@ import {
   faSatellite,
   faBug,
 } from "@fortawesome/free-solid-svg-icons";
+import CallToActionButton from "@/components/buttons/CallToActionButton";
 
 export default function SkillsSection() {
   return (
@@ -174,6 +175,11 @@ export default function SkillsSection() {
           </ul>
         </div>
       </div>
+
+      <CallToActionButton
+            text="Conoce mas sobre mi educacion"
+            route={"/certifications"}
+      />
     </div>
   );
 }
