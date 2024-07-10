@@ -28,7 +28,7 @@ const higherEdAndSpecializations = [
   {
     title: "Associate of Applied Science in Applied Technology",
     institution: "Brigham Young University - Idaho",
-    dates: "Sept. 2021 - May. 2024",
+    dates: "Abr. 2022 - May. 2024",
     description:
       "Tecnico Universitario en Tecnología Aplicada (Analista de sistemas)",
     logo: byuIdahoLogo,
