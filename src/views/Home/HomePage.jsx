@@ -52,6 +52,25 @@ export default function HomePage() {
               openInNewTab
               className="mt-8 sm:mt-8"
             />
+            <div className="flex justify-center  space-x-4">
+              <div className="flex items-center mt-9">
+                <span className="relative inline-flex overflow-hidden rounded-full p-[1px]">
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"></span>
+                  <button
+                    className="inline-flex items-center justify-center px-3 py-1 text-sm text-green-800 bg-green-100 rounded-full cursor-pointer dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl whitespace-nowrap"
+                    onClick={openModal}
+                  >
+                    Ver CV embebido
+                  </button>
+                </span>
+              </div>
+
+              <CallToActionButton
+                text="Descargar CV"
+                route="https://export-download.canva.com/lfx-0/DAF6F9lfx-0/74/0-8153075974166218162.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20240719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240719T141517Z&X-Amz-Expires=4695&X-Amz-Signature=9a444f65527a0065833169334bbdc7b1184799baded2d2d83cafb054c55d8fd7&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27%255BTL%255D%2520Ezequiel%2520M.%2520Tartaglia%2520-%2520CV.pdf&response-expires=Fri%2C%2019%20Jul%202024%2015%3A33%3A32%20GMT"
+                openInNewTab
+              />
+            </div>
           </div>
         </div>
 
@@ -119,27 +138,6 @@ export default function HomePage() {
           <CallToActionButton
             text="Conoce más sobre mis experiencias"
             route={"/professional_experiences"}
-          />
-        </div>
-
-        <div className="flex justify-center mt-8 space-x-4">
-          
-        <div className="flex items-center mt-9">
-          <span className="relative inline-flex overflow-hidden rounded-full p-[1px]">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"></span>
-            <button
-              className="inline-flex items-center justify-center px-3 py-1 text-sm text-green-800 bg-green-100 rounded-full cursor-pointer dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl whitespace-nowrap"
-              onClick={openModal}
-            >
-              Ver CV embebido
-            </button>
-          </span>
-          </div>
-            
-          <CallToActionButton
-            text="Descargar CV"
-            route="https://export-download.canva.com/lfx-0/DAF6F9lfx-0/74/0-8153075974166218162.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20240719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240719T141517Z&X-Amz-Expires=4695&X-Amz-Signature=9a444f65527a0065833169334bbdc7b1184799baded2d2d83cafb054c55d8fd7&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27%255BTL%255D%2520Ezequiel%2520M.%2520Tartaglia%2520-%2520CV.pdf&response-expires=Fri%2C%2019%20Jul%202024%2015%3A33%3A32%20GMT"
-            openInNewTab
           />
         </div>
 
