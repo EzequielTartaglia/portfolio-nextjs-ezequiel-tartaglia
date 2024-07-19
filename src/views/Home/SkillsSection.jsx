@@ -94,6 +94,7 @@ export default function SkillsSection() {
             <li>Oracle (SQL*Plus)</li>
             <li>Dbeaver</li>
             <li>MongoDB</li>
+            <li>Supabase</li>
           </ul>
         </div>
 
