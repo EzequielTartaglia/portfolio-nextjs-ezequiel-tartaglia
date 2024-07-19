@@ -31,7 +31,7 @@ export default function HomePage() {
             <Image
               src="https://i.ibb.co/bsvYfPt/image-removebg-preview.png"
               alt="Ezequiel M. Tartaglia"
-              className="object-cover opacity-75"
+              className="object-cover opacity-75 rounded-full"
               layout="fill"
               quality={100}
             />
