@@ -9,10 +9,19 @@ export default function CVCanvasModal({ isOpen, onClose }) {
     }
   }, [isOpen]);
 
+  const handleClickOutside = (event) => {
+    if (event.target.classList.contains('modal-overlay')) {
+      onClose();
+    }
+  };
+
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 max-h-screen">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 max-h-screen modal-overlay"
+      onClick={handleClickOutside}
+    >
       <div className="relative bg-white p-4 rounded-lg shadow-lg max-w-3xl w-full max-h-screen overflow-y-auto">
         <button
           onClick={onClose}
@@ -28,13 +37,6 @@ export default function CVCanvasModal({ isOpen, onClose }) {
             allowFullScreen
           ></iframe>
         </div>
-        <a
-          href="https://www.canva.com/design/DAF6F9lfx-0/GHvCNjtJuwlD3zLQXVQk8g/view?utm_content=DAF6F9lfx-0&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 inline-block text-teal-500 hover:text-teal-700"
-        >
-        </a>
       </div>
     </div>
   );
