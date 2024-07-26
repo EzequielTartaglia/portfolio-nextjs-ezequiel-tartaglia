@@ -27,11 +27,11 @@ export default function HomePage() {
       <PageHeader title="Inicio" />
       <PageBody>
         <div className="relative w-full bg-gradient-to-r from-black to-gray-900 text-white p-8 sm:p-16 flex flex-col md:flex-row items-start justify-between border-secondary-light">
-          <div className="relative w-full h-[400px] sm:h-[550px] z-0 mb-8 md:mb-0">
+          <div className="relative w-full md:w-[560px] h-[275px] sm:h-[550px] z-0 mb-8 md:mb-0">
             <Image
               src="https://i.ibb.co/bsvYfPt/image-removebg-preview.png"
               alt="Ezequiel M. Tartaglia"
-              className="object-cover opacity-75 rounded-lg"
+              className="object-cover opacity-75 rounded-full border-secondary "
               layout="fill"
               quality={100}
             />
