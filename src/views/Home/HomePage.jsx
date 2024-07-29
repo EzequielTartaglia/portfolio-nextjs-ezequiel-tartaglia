@@ -152,6 +152,13 @@ export default function HomePage() {
             Proyectos para empresas
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <ProjectCard
+              title="DasLabor (Landing Page & Plataforma educativa)"
+              text="Plataforma de asesoria farmaceutica para centroamerica y sudamerica."
+              buttonText="Link al proyecto real"
+              buttonRoute="https://das-labor.netlify.app/"
+            />
             <ProjectCard
               title="Bohemian (Landing Page & Plataforma educativa)"
               text="Plataforma educativa sobre terrarios."
