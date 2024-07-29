@@ -2,6 +2,7 @@ import PageBody from "@/components/page_formats/PageBody";
 import PageHeader from "@/components/page_formats/PageHeader";
 
 // Importa las imágenes de los logos de cada empresa
+import dasLaborLogo from "../../../public/assets/companies/das_labor_logo.jpg";
 import felanixLogo from "../../../public/assets/companies/felanix_construcciones_logo.jpg";
 import emsetecLogo from "../../../public/assets/companies/emsetec_logo.jpg";
 import pocketfulLogo from "../../../public/assets/companies/pocketfull_of_quarters_logo.jpg";
@@ -13,6 +14,19 @@ import Image from "next/image";
 
 const experiences = [
   {
+    role: "Chief Technology Officer || Tech Leader",
+    company: "Das Labor",
+    location: "Santiago, Chile",
+    dates: "Mayo de 2024 - actualidad",
+    responsibilities: [
+      "Dirigí los departamentos de Programación, Gestión de Datos e Infraestructura, supervisando a los respectivos jefes de área.",
+      "Participé activamente en los procesos operativos y avances tecnológicos, incluyendo programación, generación de insights con ciencia de datos y análisis de datos, y soporte de infraestructura.",
+      "Desarrollé soluciones a lo largo del ciclo de vida del software, desde análisis de requerimientos hasta implementación para usuarios finales. Adapación a Progressive Web App",
+      "Experiencia en programación full-stack utilizando tecnologías como NextJs 14, PostgreSQL, Supabase.",
+    ],
+    logo: dasLaborLogo,
+  },
+    {
     role: "Chief Technology Officer || Tech Leader",
     company: "Felanix Construcciones",
     location: "La Plata, Provincia de Buenos Aires, Argentina",
