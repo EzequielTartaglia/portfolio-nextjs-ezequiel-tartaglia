@@ -154,33 +154,33 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <ProjectCard
-              title="DasLabor (Landing Page & Plataforma educativa)"
-              text="Plataforma de asesoria farmaceutica para centroamerica y sudamerica."
-              buttonText="Link al proyecto real"
+              title="DasLabor (Landing Page & Plataforma Educativa)"
+              text="Plataforma LMS (Learning Management System) para la gestión de cursos, módulos, clases, modo comercial, creación y ejecución de exámenes. Incluye roles de administración y de estudiante, y está orientada a la asesoría farmacéutica para Centroamérica y Sudamérica."
+              buttonText="Visitar proyecto"
               buttonRoute="https://das-labor.netlify.app/"
             />
             <ProjectCard
-              title="Bohemian (Landing Page & Plataforma educativa)"
-              text="Plataforma educativa sobre terrarios."
-              buttonText="Link al proyecto real"
+              title="Bohemian (Landing Page & Plataforma Educativa)"
+              text="Sistema LMS (Learning Management System) para la gestión de cursos, módulos, clases, modo comercial, creación y ejecución de exámenes. Incluye roles de administración y de estudiante, enfocado en terrarios."
+              buttonText="Visitar proyecto"
               buttonRoute="https://bohemian-co-art.netlify.app/"
             />
             <ProjectCard
               title="Felanix - Unagi (CRM)"
               text="Sistema CRM para gestión de construcción de edificios, proyectos, control de asistencia, liquidación de sueldos, entre otras funcionalidades."
-              buttonText="Link al proyecto real"
+              buttonText="Visitar proyecto"
               buttonRoute="http://felanix.unagi.com.ar/a/users/sign_in"
             />
             <ProjectCard
               title="Emsetec - Zeus (CRM)"
               text="Sistema CRM para gestión de operaciones y mantenimiento edilicio."
-              buttonText="Link al proyecto real"
+              buttonText="Visitar proyecto"
               buttonRoute="https://app.emsetec.com.ar/v2/users/login"
             />
             <ProjectCard
               title="PocketFull Of Quarters (Landing Page & Plataforma gaming + Web3)"
               text="Plataforma de Web3 para videojuegos, conectada con Blockchain."
-              buttonText="Link al proyecto real"
+              buttonText="Visitar proyecto"
               buttonRoute="https://www.poq.gg/"
             />
           </div>
