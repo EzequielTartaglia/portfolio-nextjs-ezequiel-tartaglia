@@ -7,6 +7,7 @@ import Image from "next/image";
 
 // Importa las imágenes de los logos de cada empresa
 import dasLaborLogo from "../../../public/assets/companies/das_labor_logo.jpg";
+import promptTheFutureLogo from "../../../public/assets/companies/prompt_the_future_logo.jpg";
 import felanixLogo from "../../../public/assets/companies/felanix_construcciones_logo.jpg";
 import emsetecLogo from "../../../public/assets/companies/emsetec_logo.jpg";
 import pocketfulLogo from "../../../public/assets/companies/pocketfull_of_quarters_logo.jpg";
@@ -43,6 +44,19 @@ const experiences = [
     ],
     logo: felanixLogo,
     category: "IT",
+  },
+  {
+    role: "Speaker || Contenidista & Evaluador e-learning programación/Data especializado en IA",
+    company: "Prompt The Future",
+    location: "Remoto",
+    dates: "Mayo de 2024 - Julio de 2024",
+    responsibilities: [
+      "Participacion como Speaker para un Hackathon sobre Prompt Engineering y desarrollo de modelos de Inteligencia Artificial.",
+      "Desarrollo de contenidos para el curso de Fundamentos de Inteligencia Artificial",
+      "Participación como Speaker en el lanzamiento de productos audiovisuales en el área de inteligencia artificial y programación a nivel internacional."
+    ],
+    logo: promptTheFutureLogo,
+    category: "Pedagogia",
   },
   {
     role: "Fullstack Software Engineer & Data Scientist",
@@ -136,7 +150,7 @@ const experiences = [
       "Resolución del 90% de problemas de características que no funcionaban, utilizando soluciones creativas.",
     ],
     logo: proyectoSUDLogo,
-    category: "Contenidos y Oratoria",
+    category: "IT",
   },
 ];
 
