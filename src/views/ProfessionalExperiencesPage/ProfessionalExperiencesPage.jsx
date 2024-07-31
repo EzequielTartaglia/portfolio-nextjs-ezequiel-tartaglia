@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from "react";
 import PageBody from "@/components/page_formats/PageBody";
 import PageHeader from "@/components/page_formats/PageHeader";
@@ -194,37 +192,49 @@ export default function ProfessionalExperiencesPage() {
         </button>
       </div>
 
-      {filteredExperiences.map((experience, index) => (
-        <div
-          key={index}
-          className="mb-8 p-4 bg-gray-900 rounded shadow-md border border-turquoise"
-        >
-          <div className="flex items-center mb-4">
-            <Image
-              src={experience.logo}
-              alt={`${experience.company} logo`}
-              width={50}
-              height={50}
-              className="mr-4"
-            />
-            <div>
-              <h2 className="text-lg font-bold text-turquoise">
-                {experience.role}
-              </h2>
-              <p className="text-gray-500">{experience.company}</p>
-              <p className="text-gray-600">{experience.location}</p>
-              <p className="text-gray-600">{experience.dates}</p>
+      <div className="relative">
+        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-turquoise"></div>
+        {filteredExperiences.map((experience, index) => (
+          <div
+            key={index}
+            className={`mb-8 p-4 bg-gray-900 rounded shadow-md border border-turquoise ${
+              index % 2 === 0 ? "ml-0 mr-auto" : "ml-auto mr-0"
+            } w-5/12 relative`}
+          >
+            <div
+              className={`absolute top-4 transform -translate-y-1/2 ${
+                index % 2 === 0 ? "left-full ml-4" : "right-full mr-4"
+              }`}
+            >
+              <div className="bg-turquoise w-4 h-4 rounded-full border border-gray-900"></div>
             </div>
+            <div className="flex items-center mb-4">
+              <Image
+                src={experience.logo}
+                alt={`${experience.company} logo`}
+                width={50}
+                height={50}
+                className="mr-4"
+              />
+              <div>
+                <h2 className="text-lg font-bold text-turquoise">
+                  {experience.role}
+                </h2>
+                <p className="text-gray-500">{experience.company}</p>
+                <p className="text-gray-600">{experience.location}</p>
+                <p className="text-gray-600">{experience.dates}</p>
+              </div>
+            </div>
+            <ul className="list-disc pl-6 text-gray-300">
+              {experience.responsibilities.map((responsibility, idx) => (
+                <li key={idx} className="text-gray-300">
+                  {responsibility}
+                </li>
+              ))}
+            </ul>
           </div>
-          <ul className="list-disc pl-6 text-gray-300">
-            {experience.responsibilities.map((responsibility, idx) => (
-              <li key={idx} className="text-gray-300">
-                {responsibility}
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
+        ))}
+      </div>
     </PageBody>
   );
 }
