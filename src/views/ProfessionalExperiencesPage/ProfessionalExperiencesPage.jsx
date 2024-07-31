@@ -155,7 +155,9 @@ export default function ProfessionalExperiencesPage() {
         <button
           onClick={() => setFilter("Todos")}
           className={`px-4 py-2 rounded ${
-            filter === "Todos" ? "bg-blue-500 text-white" : "bg-gray-200"
+            filter === "Todos"
+              ? "bg-turquoise text-black border border-yellow-400"
+              : "bg-gray-800 text-turquoise border border-yellow-400 hover:bg-gray-700"
           }`}
         >
           Todos
@@ -163,7 +165,9 @@ export default function ProfessionalExperiencesPage() {
         <button
           onClick={() => setFilter("IT")}
           className={`px-4 py-2 rounded ${
-            filter === "IT" ? "bg-blue-500 text-white" : "bg-gray-200"
+            filter === "IT"
+              ? "bg-turquoise text-black border border-yellow-400"
+              : "bg-gray-800 text-turquoise border border-yellow-400 hover:bg-gray-700"
           }`}
         >
           IT
@@ -171,7 +175,9 @@ export default function ProfessionalExperiencesPage() {
         <button
           onClick={() => setFilter("Pedagogia")}
           className={`px-4 py-2 rounded ${
-            filter === "Pedagogia" ? "bg-blue-500 text-white" : "bg-gray-200"
+            filter === "Pedagogia"
+              ? "bg-turquoise text-black border border-yellow-400"
+              : "bg-gray-800 text-turquoise border border-yellow-400 hover:bg-gray-700"
           }`}
         >
           Pedagogia
@@ -179,7 +185,9 @@ export default function ProfessionalExperiencesPage() {
         <button
           onClick={() => setFilter("Contenidos y Oratoria")}
           className={`px-4 py-2 rounded ${
-            filter === "Contenidos y Oratoria" ? "bg-blue-500 text-white" : "bg-gray-200"
+            filter === "Contenidos y Oratoria"
+              ? "bg-turquoise text-black border border-yellow-400"
+              : "bg-gray-800 text-turquoise border border-yellow-400 hover:bg-gray-700"
           }`}
         >
           Contenidos y Oratoria
@@ -187,7 +195,10 @@ export default function ProfessionalExperiencesPage() {
       </div>
 
       {filteredExperiences.map((experience, index) => (
-        <div key={index} className="mb-8 p-4 bg-white rounded shadow-md">
+        <div
+          key={index}
+          className="mb-8 p-4 bg-gray-900 rounded shadow-md border border-turquoise"
+        >
           <div className="flex items-center mb-4">
             <Image
               src={experience.logo}
@@ -197,15 +208,17 @@ export default function ProfessionalExperiencesPage() {
               className="mr-4"
             />
             <div>
-              <h2 className="text-lg font-bold">{experience.role}</h2>
-              <p className="text-gray-700">{experience.company}</p>
-              <p className="text-gray-500">{experience.location}</p>
-              <p className="text-gray-500">{experience.dates}</p>
+              <h2 className="text-lg font-bold text-turquoise">
+                {experience.role}
+              </h2>
+              <p className="text-gray-500">{experience.company}</p>
+              <p className="text-gray-600">{experience.location}</p>
+              <p className="text-gray-600">{experience.dates}</p>
             </div>
           </div>
-          <ul className="list-disc pl-6">
+          <ul className="list-disc pl-6 text-gray-300">
             {experience.responsibilities.map((responsibility, idx) => (
-              <li key={idx} className="text-gray-700">
+              <li key={idx} className="text-gray-300">
                 {responsibility}
               </li>
             ))}
