@@ -9,6 +9,7 @@ import Image from "next/image";
 import dasLaborLogo from "../../../public/assets/companies/das_labor_logo.jpg";
 import promptTheFutureLogo from "../../../public/assets/companies/prompt_the_future_logo.jpg";
 import felanixLogo from "../../../public/assets/companies/felanix_construcciones_logo.jpg";
+import isticLogo from "../../../public/assets/companies/istic_logo.jpg";
 import emsetecLogo from "../../../public/assets/companies/emsetec_logo.jpg";
 import pocketfulLogo from "../../../public/assets/companies/pocketfull_of_quarters_logo.jpg";
 import coderhouseLogo from "../../../public/assets/companies/coderhouse_logo.jpg";
@@ -56,6 +57,19 @@ const experiences = [
       "Participación como Speaker en el lanzamiento de productos audiovisuales en el área de inteligencia artificial y programación a nivel internacional."
     ],
     logo: promptTheFutureLogo,
+    category: "Pedagogia",
+  },
+  {
+    role: "Instructor universitario de Programación 2",
+    company: "Instituto Superior Tecnico Inmaculada Concepción",
+    location: "Presencial",
+    dates: "Julio de 2023 - Febrero de 2024",
+    responsibilities: [
+      "Dictado de clases para segundo año de la carrera de analista de sistemas",
+      "Desarrollo de trabajos practicos, examenes y presentaciones didacticas sobre temas de desarrollo de software, calidad de software, programacion front-end y back-end",
+      "Participación en mesas finales para la promosión de materias de calidad de software (testing)"
+    ],
+    logo: isticLogo,
     category: "Pedagogia",
   },
   {
