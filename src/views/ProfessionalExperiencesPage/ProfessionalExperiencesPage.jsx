@@ -148,95 +148,96 @@ export default function ProfessionalExperiencesPage() {
   );
 
   return (
-    <PageBody>
-      <PageHeader title="Experiencias Profesionales" />
+<PageBody>
+  <PageHeader title="Experiencias Profesionales" />
 
-      <div className="flex justify-center space-x-4 my-4">
-        <button
-          onClick={() => setFilter("Todos")}
-          className={`px-4 py-2 rounded ${
-            filter === "Todos"
-              ? "bg-turquoise text-black border border-yellow-400"
-              : "bg-gray-800 text-turquoise border border-yellow-400 hover:bg-gray-700"
-          }`}
-        >
-          Todos
-        </button>
-        <button
-          onClick={() => setFilter("IT")}
-          className={`px-4 py-2 rounded ${
-            filter === "IT"
-              ? "bg-turquoise text-black border border-yellow-400"
-              : "bg-gray-800 text-turquoise border border-yellow-400 hover:bg-gray-700"
-          }`}
-        >
-          IT
-        </button>
-        <button
-          onClick={() => setFilter("Pedagogia")}
-          className={`px-4 py-2 rounded ${
-            filter === "Pedagogia"
-              ? "bg-turquoise text-black border border-yellow-400"
-              : "bg-gray-800 text-turquoise border border-yellow-400 hover:bg-gray-700"
-          }`}
-        >
-          Pedagogia
-        </button>
-        <button
-          onClick={() => setFilter("Contenidos y Oratoria")}
-          className={`px-4 py-2 rounded ${
-            filter === "Contenidos y Oratoria"
-              ? "bg-turquoise text-black border border-yellow-400"
-              : "bg-gray-800 text-turquoise border border-yellow-400 hover:bg-gray-700"
-          }`}
-        >
-          Contenidos y Oratoria
-        </button>
-      </div>
+  <div className="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4 my-4">
+    <button
+      onClick={() => setFilter("Todos")}
+      className={`px-4 py-2 rounded ${
+        filter === "Todos"
+        ? "bg-primary text-title-active-static border border-secondary-light"
+        : "bg-gray-800 text-white border border-secondary-light hover:bg-gray-700"
+      }`}
+    >
+      Todos
+    </button>
+    <button
+      onClick={() => setFilter("IT")}
+      className={`px-4 py-2 rounded ${
+        filter === "IT"
+        ? "bg-primary text-title-active-static border border-secondary-light"
+        : "bg-gray-800 text-white border border-secondary-light hover:bg-gray-700"
+      }`}
+    >
+      IT
+    </button>
+    <button
+      onClick={() => setFilter("Pedagogia")}
+      className={`px-4 py-2 rounded ${
+        filter === "Pedagogia"
+        ? "bg-primary text-title-active-static border border-secondary-light"
+        : "bg-gray-800 text-white border border-secondary-light hover:bg-gray-700"
+      }`}
+    >
+      Pedagogia
+    </button>
+    <button
+      onClick={() => setFilter("Contenidos y Oratoria")}
+      className={`px-4 py-2 rounded ${
+        filter === "Contenidos y Oratoria"
+          ? "bg-primary text-title-active-static border border-secondary-light"
+          : "bg-gray-800 text-white border border-secondary-light hover:bg-gray-700"
+      }`}
+    >
+      Contenidos y Oratoria
+    </button>
+  </div>
 
-      <div className="relative">
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-turquoise"></div>
-        {filteredExperiences.map((experience, index) => (
-          <div
-            key={index}
-            className={`mb-8 p-4 bg-gray-900 rounded shadow-md border border-turquoise ${
-              index % 2 === 0 ? "ml-0 mr-auto" : "ml-auto mr-0"
-            } w-5/12 relative`}
-          >
-            <div
-              className={`absolute top-4 transform -translate-y-1/2 ${
-                index % 2 === 0 ? "left-full ml-4" : "right-full mr-4"
-              }`}
-            >
-              <div className="bg-turquoise w-4 h-4 rounded-full border border-gray-900"></div>
-            </div>
-            <div className="flex items-center mb-4">
-              <Image
-                src={experience.logo}
-                alt={`${experience.company} logo`}
-                width={50}
-                height={50}
-                className="mr-4"
-              />
-              <div>
-                <h2 className="text-lg font-bold text-turquoise">
-                  {experience.role}
-                </h2>
-                <p className="text-gray-500">{experience.company}</p>
-                <p className="text-gray-600">{experience.location}</p>
-                <p className="text-gray-600">{experience.dates}</p>
-              </div>
-            </div>
-            <ul className="list-disc pl-6 text-gray-300">
-              {experience.responsibilities.map((responsibility, idx) => (
-                <li key={idx} className="text-gray-300">
-                  {responsibility}
-                </li>
-              ))}
-            </ul>
+  <div className="relative">
+    <div className="absolute inset-y-0 left-1/2 w-1 button-primary-bg"></div>
+    {filteredExperiences.map((experience, index) => (
+      <div
+        key={index}
+        className={`mb-8 p-4 bg-gray-900 rounded shadow-md border border-secondary-light w-full sm:w-5/12 relative ${
+          index % 2 === 0 ? "sm:ml-0 sm:mr-auto" : "sm:ml-auto sm:mr-0"
+        }`}
+      >
+        <div
+          className={`flex items-center mb-8 ${
+            index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
+          }`}
+        >
+          <div className="w-full md:w-1/2 p-4"></div>
+        </div>
+        <div className="flex items-center mb-4">
+          <Image
+            src={experience.logo}
+            alt={`${experience.company} logo`}
+            width={50}
+            height={50}
+            className="mr-4"
+          />
+          <div>
+            <h2 className="text-lg font-bold text-turquoise">
+              {experience.role}
+            </h2>
+            <p className="text-gray-500">{experience.company}</p>
+            <p className="text-gray-600">{experience.location}</p>
+            <p className="text-gray-600">{experience.dates}</p>
           </div>
-        ))}
+        </div>
+        <ul className="list-disc pl-6 text-gray-300">
+          {experience.responsibilities.map((responsibility, idx) => (
+            <li key={idx} className="text-gray-300">
+              {responsibility}
+            </li>
+          ))}
+        </ul>
       </div>
-    </PageBody>
+    ))}
+  </div>
+</PageBody>
+
   );
 }
