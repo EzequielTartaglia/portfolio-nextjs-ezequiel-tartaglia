@@ -1,5 +1,9 @@
+'use client'
+
+import { useState } from "react";
 import PageBody from "@/components/page_formats/PageBody";
 import PageHeader from "@/components/page_formats/PageHeader";
+import Image from "next/image";
 
 // Importa las imágenes de los logos de cada empresa
 import dasLaborLogo from "../../../public/assets/companies/das_labor_logo.jpg";
@@ -10,7 +14,6 @@ import coderhouseLogo from "../../../public/assets/companies/coderhouse_logo.jpg
 import makingPublicidadeLogo from "../../../public/assets/companies/making_publicidade_logo.jpg";
 import alianzaAmericaLogo from "../../../public/assets/companies/alianza_america_idiomas_logo.jpg";
 import proyectoSUDLogo from "../../../public/assets/companies/proyecto_sud_logo.jpg";
-import Image from "next/image";
 
 const experiences = [
   {
@@ -25,8 +28,9 @@ const experiences = [
       "Experiencia en programación full-stack utilizando tecnologías como NextJs 14, PostgreSQL, Supabase.",
     ],
     logo: dasLaborLogo,
+    category: "IT",
   },
-    {
+  {
     role: "Chief Technology Officer || Tech Leader",
     company: "Felanix Construcciones",
     location: "La Plata, Provincia de Buenos Aires, Argentina",
@@ -38,6 +42,7 @@ const experiences = [
       "Experiencia en programación full-stack utilizando tecnologías como Ruby on Rails, PostgreSQL, DBeaver, JavaScript, y pruebas unitarias.",
     ],
     logo: felanixLogo,
+    category: "IT",
   },
   {
     role: "Fullstack Software Engineer & Data Scientist",
@@ -52,6 +57,7 @@ const experiences = [
       "Gestión de la ticketera y resolución de incidencias de infraestructura (Soporte IT/Help Desk) tanto de manera presencial como mediante acceso remoto (AnyDesk) en áreas de software, cloud, redes y Outlook.",
     ],
     logo: emsetecLogo,
+    category: "IT",
   },
   {
     role: "Fullstack Software Engineer",
@@ -68,6 +74,7 @@ const experiences = [
       "Experiencia en cumplir con plazos ajustados, objetivos y entregas a tiempo, así como en la limpieza de código y refactorización para optimizar rendimiento y escalabilidad del software.",
     ],
     logo: pocketfulLogo,
+    category: "IT",
   },
   {
     role: "Especialista en Administración de Datos y Desarrollo de Software para Campañas Publicitarias",
@@ -82,6 +89,7 @@ const experiences = [
       "Ingreso, análisis y auditoría de datos de facturación diaria y mensual de campañas publicitarias, implementando soluciones automatizadas y software para mejorar eficiencia y precisión.",
     ],
     logo: makingPublicidadeLogo,
+    category: "IT",
   },
   {
     role: "Speaker || Contenidista & Evaluador e-learning || Profesor & Tutor Adjunto en Programación/Data",
@@ -97,6 +105,7 @@ const experiences = [
       "Preparación de exámenes técnicos para la contratación de talentos académicos."
     ],
     logo: coderhouseLogo,
+    category: "Pedagogia",
   },
   {
     role: "Analista y Auditor informático de bases de datos (Data Analytics and Auditor IT)",
@@ -112,6 +121,7 @@ const experiences = [
       "Implementación de prácticas para reducir errores y pérdidas monetarias.",
     ],
     logo: alianzaAmericaLogo,
+    category: "IT",
   },
   {
     role: "Desarrollador de proyecto Front-End (Sitio Web)",
@@ -126,52 +136,82 @@ const experiences = [
       "Resolución del 90% de problemas de características que no funcionaban, utilizando soluciones creativas.",
     ],
     logo: proyectoSUDLogo,
+    category: "Contenidos y Oratoria",
   },
 ];
 
 export default function ProfessionalExperiencesPage() {
+  const [filter, setFilter] = useState("Todos");
+
+  const filteredExperiences = experiences.filter((experience) =>
+    filter === "Todos" ? true : experience.category === filter
+  );
+
   return (
-    <>
-      <PageHeader
-        title="Experiencias Profesionales"
-        goBackRoute={"/"}
-        goBackText={"Volver al Inicio"}
-      />
-      <PageBody>
-        <div className="relative overflow-hidden py-10">
-          <div className="absolute inset-y-0 left-1/2 w-1 button-primary-bg"></div>
-          {experiences.map((experience, index) => (
-            <div
-              key={index}
-              className={`flex items-center mb-8 ${
-                index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-              }`}
-            >
-              <div className="w-2/2 md:w-1/2 p-4">
-                <div className="bg-gray-900 p-6 rounded-lg shadow-lg border border-secondary-light relative">
-                  <div className="flex items-center mb-4">
-                    <Image
-                      src={experience.logo}
-                      alt={`${experience.company} Logo`}
-                      className="h-12 w-12 mr-3"
-                    />
-                    <h3 className="text-xl font-bold text-white">
-                      {experience.role}
-                    </h3>
-                  </div>
-                  <p className="text-sm text-gray-400">{experience.dates}</p>
-                  <p className="text-sm text-gray-400">{experience.location}</p>
-                  <ul className="mt-2 text-gray-300">
-                    {experience.responsibilities.map((item, i) => (
-                      <li key={i}>- {item}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+    <PageBody>
+      <PageHeader title="Experiencias Profesionales" />
+
+      <div className="flex justify-center space-x-4 my-4">
+        <button
+          onClick={() => setFilter("Todos")}
+          className={`px-4 py-2 rounded ${
+            filter === "Todos" ? "bg-blue-500 text-white" : "bg-gray-200"
+          }`}
+        >
+          Todos
+        </button>
+        <button
+          onClick={() => setFilter("IT")}
+          className={`px-4 py-2 rounded ${
+            filter === "IT" ? "bg-blue-500 text-white" : "bg-gray-200"
+          }`}
+        >
+          IT
+        </button>
+        <button
+          onClick={() => setFilter("Pedagogia")}
+          className={`px-4 py-2 rounded ${
+            filter === "Pedagogia" ? "bg-blue-500 text-white" : "bg-gray-200"
+          }`}
+        >
+          Pedagogia
+        </button>
+        <button
+          onClick={() => setFilter("Contenidos y Oratoria")}
+          className={`px-4 py-2 rounded ${
+            filter === "Contenidos y Oratoria" ? "bg-blue-500 text-white" : "bg-gray-200"
+          }`}
+        >
+          Contenidos y Oratoria
+        </button>
+      </div>
+
+      {filteredExperiences.map((experience, index) => (
+        <div key={index} className="mb-8 p-4 bg-white rounded shadow-md">
+          <div className="flex items-center mb-4">
+            <Image
+              src={experience.logo}
+              alt={`${experience.company} logo`}
+              width={50}
+              height={50}
+              className="mr-4"
+            />
+            <div>
+              <h2 className="text-lg font-bold">{experience.role}</h2>
+              <p className="text-gray-700">{experience.company}</p>
+              <p className="text-gray-500">{experience.location}</p>
+              <p className="text-gray-500">{experience.dates}</p>
             </div>
-          ))}
+          </div>
+          <ul className="list-disc pl-6">
+            {experience.responsibilities.map((responsibility, idx) => (
+              <li key={idx} className="text-gray-700">
+                {responsibility}
+              </li>
+            ))}
+          </ul>
         </div>
-      </PageBody>
-    </>
+      ))}
+    </PageBody>
   );
 }
