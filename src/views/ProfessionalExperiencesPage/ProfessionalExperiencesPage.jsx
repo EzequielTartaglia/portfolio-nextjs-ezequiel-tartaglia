@@ -1,3 +1,5 @@
+'use client' 
+
 import { useState } from "react";
 import PageBody from "@/components/page_formats/PageBody";
 import PageHeader from "@/components/page_formats/PageHeader";
