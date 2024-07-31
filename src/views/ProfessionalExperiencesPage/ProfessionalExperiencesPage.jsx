@@ -196,16 +196,6 @@ export default function ProfessionalExperiencesPage() {
     >
       Pedagogia
     </button>
-    <button
-      onClick={() => setFilter("Contenidos y Oratoria")}
-      className={`px-4 py-2 rounded ${
-        filter === "Contenidos y Oratoria"
-          ? "bg-primary text-title-active-static border border-secondary-light"
-          : "bg-gray-800 text-white border border-secondary-light hover:bg-gray-700"
-      }`}
-    >
-      Contenidos y Oratoria
-    </button>
   </div>
 
   <div className="relative">
