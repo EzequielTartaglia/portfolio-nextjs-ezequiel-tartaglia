@@ -2,7 +2,7 @@ import PageBody from "@/components/page_formats/PageBody";
 import PageHeader from "@/components/page_formats/PageHeader";
 import Image from "next/image";
 
-// Importa las imágenes de los logos de cada institución
+// Images from logo
 import byuIdahoLogo from "../../../public/assets/education/byu_idaho_logo.jpg";
 import byuPathwayLogo from "../../../public/assets/education/byu_pathway_logo.jpg";
 import coderhouseLogo from "../../../public/assets/education/coderhouse_logo.jpg";
@@ -34,8 +34,15 @@ const higherEdAndSpecializations = [
     logo: byuIdahoLogo,
   },
   {
+    title: "Database Certificate",
+    institution: "Brigham Young University - Idaho",
+    dates: "Abr. 2023 - May. 2024",
+    description: "Titulación: A (mayor a 92%)",
+    logo: byuIdahoLogo,
+  },
+  {
     title: "Web & Computing programming Certificate",
-    institution: "BYU-Pathway Worldwide",
+    institution: "Brigham Young University - Idaho",
     dates: "Sept. 2021 - Jul. 2022",
     description: "Titulación: A (mayor a 92%)",
     logo: byuIdahoLogo,
