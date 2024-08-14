@@ -4,7 +4,6 @@ import Image from "next/image";
 
 // Images from logo
 import byuIdahoLogo from "../../../public/assets/education/byu_idaho_logo.jpg";
-import byuPathwayLogo from "../../../public/assets/education/byu_pathway_logo.jpg";
 import coderhouseLogo from "../../../public/assets/education/coderhouse_logo.jpg";
 import ibmLogo from "../../../public/assets/education/ibm_logo.jpg";
 import unJuLogo from "../../../public/assets/education/unju_logo.jpg";
