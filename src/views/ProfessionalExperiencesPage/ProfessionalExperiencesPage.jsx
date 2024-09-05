@@ -19,7 +19,7 @@ import proyectoSUDLogo from "../../../public/assets/companies/proyecto_sud_logo.
 
 const experiences = [
   {
-    role: "Chief Technology Officer || Tech Leader",
+    role: "Solutions Architect and Sr. Software Engineer",
     company: "Das Labor",
     location: "Santiago, Chile",
     dates: "Mayo de 2024 - actualidad",
@@ -36,7 +36,7 @@ const experiences = [
     role: "Chief Technology Officer || Tech Leader",
     company: "Felanix Construcciones",
     location: "La Plata, Provincia de Buenos Aires, Argentina",
-    dates: "Agosto de 2023 - actualidad",
+    dates: "Agosto de 2023 - Agosto de 2024",
     responsibilities: [
       "Dirigí los departamentos de Programación, Gestión de Datos e Infraestructura, supervisando a los respectivos jefes de área.",
       "Participé activamente en los procesos operativos y avances tecnológicos, incluyendo programación, generación de insights con ciencia de datos y análisis de datos, y soporte de infraestructura.",
