@@ -154,6 +154,12 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <ProjectCard
+              title="B&T (Landing Page & Plataforma de gestion para personal de salud)"
+              text="Plataforma CRM (Customer Relationship Managment) para la gestión de pacientes, historias clinicas. Incluye roles de pacientes, profesionales, administrativo y administrativo (multiples empresas), y está orientada a la asesoría clinica para Centroamérica y Sudamérica."
+              buttonText="Visitar proyecto"
+              buttonRoute="https://sistema-asclepio.netlify.app/"
+            />
+            <ProjectCard
               title="DasLabor (Landing Page & Plataforma Educativa)"
               text="Plataforma LMS (Learning Management System) para la gestión de cursos, módulos, clases, modo comercial, creación y ejecución de exámenes. Incluye roles de administración y de estudiante, y está orientada a la asesoría farmacéutica para Centroamérica y Sudamérica."
               buttonText="Visitar proyecto"
