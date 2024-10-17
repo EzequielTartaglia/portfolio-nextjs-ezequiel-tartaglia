@@ -8,6 +8,8 @@ import Image from "next/image";
 import SistemaOdinLogo from "../../../public/assets/projects/sistema_odin_logo.jpg";
 import SistemaInariLogo from "../../../public/assets/projects/sistema_inari_logo.jpg";
 import SistemaApoloLogo from "../../../public/assets/projects/sistema_apolo_logo.jpg";
+import SistemaAsclepioLogo from "../../../public/assets/projects/sistema_asclepio_logo.jpg";
+
 import CallToActionButton from "@/components/buttons/CallToActionButton";
 
 const projects = [
@@ -21,16 +23,23 @@ const projects = [
   {
     title: "Sistema Inari",
     description: "Control de Inventarios",
-    dates: "Abr. 2024 - Ago. 2024",
+    dates: "Abr. 2024 - Oct. 2024",
     liveLink: "https://sistema-inari.netlify.app/",
     logo: SistemaInariLogo, 
   },
   {
     title: "Sistema Apolo",
     description: "Gestión de Relaciones con Clientes",
-    dates: "Jul. 2024 - Ago. 2024",
+    dates: "Jul. 2024 - Oct. 2024",
     liveLink: "https://sistema-apolo.netlify.app/",
     logo: SistemaApoloLogo, 
+  },
+  {
+    title: "Sistema Asclepio",
+    description: "Gestión de Pacientes",
+    dates: "Oct. 2024 - Oct. 2024",
+    liveLink: "https://sistema-asclepio.netlify.app/",
+    logo: SistemaAsclepioLogo, 
   }
   // Agrega más proyectos según sea necesario
 ];
