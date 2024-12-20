@@ -114,7 +114,10 @@ export default function HomePage() {
           <p className="text-white  my-4 ">
             A lo largo de mi carrera, he participado activamente en una variedad
             de proyectos de desarrollo impactantes. Esto incluye colaborar con
-            <span className="text-teal-200"> FELANIX</span>, creando
+            <span className="text-teal-200"> Das Labor SPA</span>, creando
+            una plataforma de asesorias y certificaciones oficiales para el area farmaceutica y 
+            desarrollo de un sistema CRM propio incluyendo un modulo de auditorias e inspecciones.
+            <span className="text-teal-200"> Felanix</span>, creando
             integraciones de sistemas biométricos de gestión, impacto en la nube
             y desarrollo de un sistema CRM propio. Colaborar en{" "}
             <span className="text-teal-200">EMSETEC</span> para crear sistemas
