@@ -73,7 +73,7 @@ export default function SkillsSection() {
             <li>Pandas & Numpy</li>
             <li>Jupyter & Notebook</li>
             <li>Google Colab</li>
-            <li>PoweBI</li>
+            <li>PowerBI</li>
           </ul>
         </div>
 
