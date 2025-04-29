@@ -29,7 +29,7 @@ export default function HomePage() {
         <div className="relative w-full bg-gradient-to-r from-black to-gray-900 text-white p-8 sm:p-16 flex flex-col md:flex-row items-start justify-between border-secondary-light">
           <div className="relative w-full md:w-[560px] h-[275px] sm:h-[550px] z-0 mb-8 md:mb-0">
             <Image
-              src="https://i.ibb.co/bsvYfPt/image-removebg-preview.png"
+              src="https://i.ibb.co/CsBv7rbf/Whats-App-Image-2025-04-29-at-10-47-36-AM.jpg"
               alt="Ezequiel M. Tartaglia"
               className="object-cover opacity-75 rounded-full border-secondary "
               layout="fill"
