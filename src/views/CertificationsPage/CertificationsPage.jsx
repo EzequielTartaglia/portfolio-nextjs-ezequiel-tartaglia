@@ -33,6 +33,13 @@ const higherEdAndSpecializations = [
     logo: byuIdahoLogo,
   },
   {
+    title: "Web Development Certificate",
+    institution: "Brigham Young University - Idaho",
+    dates: "May. 2024 - Dic. 2024",
+    description: "Titulación: A (mayor a 92%)",
+    logo: byuIdahoLogo,
+  },
+  {
     title: "Database Certificate",
     institution: "Brigham Young University - Idaho",
     dates: "Abr. 2023 - May. 2024",
