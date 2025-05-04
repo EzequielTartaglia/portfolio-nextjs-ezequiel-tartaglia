@@ -18,10 +18,10 @@ import {faDriversLicense, faFileCircleCheck } from "@fortawesome/free-solid-svg-
 const higherEdAndSpecializations = [
   {
     title:
-      "Bachelor of Applied Science in Applied Technology",
+      "Bachelor Degree of Applied Science in Software Development",
     institution: "Brigham Young University - Idaho",
-    dates: "Abr. 2022 - Sept. 2027",
-    description: "Licenciatura en Tecnología Aplicada con ingeniería en Desarrollo de Software",
+    dates: "Abr. 2022 - Jun. 2025",
+    description: "Licenciatura en Ingeniería en Desarrollo de Software",
     logo: byuIdahoLogo,
   },
   {
