@@ -1,4 +1,4 @@
-import CertificationsPage from '@/src/views/CertificationsPage/CertificationsPage'
+import CertificationsPage from '@/src/views/Certifications/CertificationsPage'
 
 
 export default function certifications() {
