@@ -17,9 +17,11 @@ export function NavBar() {
 
   const toggleMenuItems = [
     { id: 'home', route: '/', text: 'Inicio' },
-    { id: 'professional_experiences', route: '/professional_experiences', text: 'Experiencias' },
-    { id: 'projects', route: '/projects', text: 'Proyectos' },
     { id: 'certifications', route: '/certifications', text: 'Certificaciones' },
+    { id: 'corporate_and_b2b_engagements', route: '/corporate_and_b2b_engagements', text: 'Capacitaciones coorporativas y B2B' },
+    { id: 'professional_experiences', route: '/professional_experiences', text: 'Experiencias' },
+    { id: 'press', route: '/press', text: 'Prensa y medios' },
+    { id: 'projects', route: '/projects', text: 'Proyectos' },
   ];
 
   // Replace it when have login route and feature
