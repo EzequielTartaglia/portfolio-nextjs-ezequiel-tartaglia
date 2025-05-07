@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 
 // Logos
-import laNacionLogo from "../../../public/assets/press/la_nacion_logo.jpg";
+import ohLalaLogo from "../../../public/assets/press/ohlala_logo.jpg";
 
 const periodicalsAndReviews = [
   {
@@ -13,7 +13,7 @@ const periodicalsAndReviews = [
       "Prompting, ética y entrenamiento de la IA: lo que todos debemos saber antes de interactuar con una inteligencia artificial",
     outlet: "Revista Ohlalá! (La Nación)",
     date: "Jun. 2025",
-    logo: laNacionLogo,
+    logo: ohLalaLogo,
     description: "Nota de prensa y capacitación en Prompting Engineering para IA Generativa - Revista Ohlalá! (La Nación)",
     link: "",
   },
