@@ -7,7 +7,7 @@ import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 // Logos
 import laNacionLogo from "../../../public/assets/press/la_nacion_logo.jpg";
 
-const revistas = [
+const periodicalsAndReviews = [
   {
     title:
       "Prompting, ética y entrenamiento de la IA: lo que todos debemos saber antes de interactuar con una inteligencia artificial",
@@ -62,7 +62,7 @@ export default function PressPage() {
             Notas en Revistas o Diarios
         </h2>
           <div className="flex flex-wrap">
-            {revistas.map((item, idx) => (
+            {periodicalsAndReviews.map((item, idx) => (
               <PressCard key={idx} item={item} />
             ))}
           </div>
