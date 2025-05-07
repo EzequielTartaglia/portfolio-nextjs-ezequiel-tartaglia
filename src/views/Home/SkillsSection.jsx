@@ -127,6 +127,7 @@ export default function SkillsSection() {
           <ul className="list-disc list-inside text-white">
             <li>Cake Php</li>
             <li>Ruby on Rails</li>
+            <li>ASP.Net</li>
           </ul>
         </div>
         {/* AI Skills */}
