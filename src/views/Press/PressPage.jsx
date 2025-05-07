@@ -12,7 +12,7 @@ const periodicalsAndReviews = [
     title:
       "Prompting, ética y entrenamiento de la IA: lo que todos debemos saber antes de interactuar con una inteligencia artificial",
     outlet: "Revista Ohlalá! (La Nación)",
-    date: "Junio 2025",
+    date: "Jun. 2025",
     logo: laNacionLogo,
     description: "Nota de prensa y capacitación en Prompting Engineering para IA Generativa - Revista Ohlalá! (La Nación)",
     link: "",
