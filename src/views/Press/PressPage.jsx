@@ -7,14 +7,14 @@ import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 // Logos
 import laNacionLogo from "../../../public/assets/press/la_nacion_logo.jpg";
 
-// Datos agrupados por tipo
 const revistas = [
   {
     title:
       "Prompting, ética y entrenamiento de la IA: lo que todos debemos saber antes de interactuar con una inteligencia artificial",
-    outlet: "La Nación (Revista Ohlala!)",
+    outlet: "Revista Ohlalá! (La Nación)",
     date: "Junio 2025",
     logo: laNacionLogo,
+    description: "Nota de prensa y capacitación en Prompting Engineering para IA Generativa - Revista Ohlalá! (La Nación)",
     link: "",
   },
 ];
@@ -38,6 +38,7 @@ const PressCard = ({ item }) => (
       </div>
       <p className="text-sm text-gray-400">{item.date}</p>
       <p className="text-sm text-gray-400">{item.outlet}</p>
+      <p className="mt-2 text-gray-300">{item.description}</p>
     </a>
   </div>
 );
