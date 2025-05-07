@@ -140,6 +140,8 @@ export default function SkillsSection() {
           </div>
           <ul className="list-disc list-inside text-white">
             <li>OpenAI API</li>
+            <li>Gemini API</li>
+            <li>Copilot</li>
           </ul>
         </div>
 
